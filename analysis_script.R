@@ -20,7 +20,7 @@ library(klaR)
 
 
 file.choose()
-caschools = read.csv("C:\\Users\\HP\\Downloads\\CASchools.csv")
+caschools = read.csv("CASchools.csv")
 head(caschools)
 dim(caschools)
 
@@ -386,4 +386,5 @@ partimat(math_group ~ income + english + expenditure_per_student,
          main = "QDA Classification Boundaries",
          col.correct = "forestgreen",
          col.wrong = "firebrick")
+
 
