@@ -34,7 +34,7 @@ summary(caschools)
 caschools$county <- as.factor(caschools$county)
 caschools$grades <- as.factor(caschools$grades)
 
-# Handle hypothetical missing values (though your dataset likely has none)
+# Handle hypothetical missing values 
 sum(is.na(caschools))  # Confirm no NAs exist  
 caschools <- na.omit(caschools)  # Only if NAs exist
 
@@ -386,5 +386,6 @@ partimat(math_group ~ income + english + expenditure_per_student,
          main = "QDA Classification Boundaries",
          col.correct = "forestgreen",
          col.wrong = "firebrick")
+
 
 
